@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Cómo las tecnologías web cambiaron la educación, los trámites, la comunicación y la inclusión.">
+  <meta name="author" content="Boris Daniel Lazo Tapia">
+  <title>Impacto en la sociedad | La web que nos cambió</title>
+  <link rel="icon" href="../img/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+  <!-- Encabezado del sitio: nombre y menú (se repite en todas las páginas) -->
+  <header class="cabecera">
+    <div class="cabecera__marca">
+      <a class="marca" href="../index.html">
+        <span>La web que nos cambió</span>
+      </a>
+      <p class="lema">Impacto de las tecnologías web en la sociedad y los negocios</p>
+    </div>
+    <nav class="menu" aria-label="Menú principal">
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="sociedad.html" aria-current="page">Sociedad</a></li>
+        <li><a href="negocios.html">Negocios</a></li>
+        <li><a href="caso-practico.html">Caso práctico</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="referencias.html">Referencias</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="contenedor">
+    <main id="contenido">
+      <h1>Impacto en la sociedad</h1>
+      <p class="intro">La web cambió cosas tan cotidianas como estudiar, pagar una cuenta o hablar con la familia. En esta página se resumen cuatro cambios que se notan en el día a día y también los problemas que llegaron con ellos.</p>
+
+      <!-- Cuatro cambios: cada uno es un artículo independiente -->
+      <section id="cambios">
+        <h2>Cambios en la vida diaria</h2>
+        <figure>
+          <img src="../img/sociedad-servicios.png" alt="Ilustración de un celular conectado con cuatro servicios: aula virtual, trámites en línea, banca en línea y comunicación por mensajería y redes." width="960" height="420">
+          <figcaption>Figura 4. Servicios que hoy se resuelven desde un navegador.</figcaption>
+        </figure>
+        <div class="tarjetas">
+          <article class="tarjeta">
+            <h3>Educación a distancia</h3>
+            <p>Las aulas virtuales permiten estudiar una carrera sin vivir cerca de la universidad. En el entorno virtual de aprendizaje están los materiales, los foros, las tareas y las calificaciones, y todo funciona desde el navegador.</p>
+          </article>
+          <article class="tarjeta">
+            <h3>Trámites en línea</h3>
+            <p>Muchos servicios públicos se consultan y se inician en línea. En Ecuador, el portal <a href="https://www.gob.ec/" target="_blank" rel="noopener">gob.ec</a> reúne la guía oficial de trámites y servicios del Estado.</p>
+          </article>
+          <article class="tarjeta">
+            <h3>Comunicación</h3>
+            <p>La mensajería, las videollamadas y las redes sociales acercaron a familias separadas por la distancia y les dieron una vitrina a grupos y emprendimientos pequeños.</p>
+          </article>
+          <article class="tarjeta">
+            <h3>Acceso a la información</h3>
+            <p>Noticias, horarios, mapas y precios se consultan en segundos desde el celular. Antes había que llamar, preguntar o acercarse al lugar.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="tabla">
+        <h2>Antes y después de la web</h2>
+        <div class="tabla-scroll">
+          <table>
+            <caption>Tabla 1. Cómo cambiaron algunas actividades cotidianas</caption>
+            <thead>
+              <tr>
+                <th scope="col">Actividad</th>
+                <th scope="col">Antes</th>
+                <th scope="col">Con las tecnologías web</th>
+                <th scope="col">Ejemplo en Ecuador</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Estudiar</td>
+                <td>Clases presenciales con horario fijo</td>
+                <td>Aula virtual disponible a cualquier hora</td>
+                <td>Carreras en modalidad a distancia con aula virtual</td>
+              </tr>
+              <tr>
+                <td>Hacer un trámite</td>
+                <td>Ir a la ventanilla y hacer fila</td>
+                <td>Consulta e inicio del trámite en línea</td>
+                <td>Guía oficial de trámites gob.ec</td>
+              </tr>
+              <tr>
+                <td>Pagar servicios</td>
+                <td>Ir a la agencia o al banco</td>
+                <td>Banca en línea y pagos desde el celular</td>
+                <td>Banca web de las entidades financieras</td>
+              </tr>
+              <tr>
+                <td>Comunicarse</td>
+                <td>Llamadas y cartas</td>
+                <td>Mensajería, videollamadas y redes</td>
+                <td>Familias en contacto con parientes en el exterior</td>
+              </tr>
+              <tr>
+                <td>Divertirse</td>
+                <td>Comprar la entrada en la taquilla</td>
+                <td>Registro y reserva desde la página web</td>
+                <td>Centros de entretenimiento con registro en línea (ver el <a href="caso-practico.html">caso práctico</a>)</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="4">Fuente: elaboración propia a partir de Torres Guarnizo (2026).</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </section>
+
+      <section id="accesibilidad">
+        <h2>Accesibilidad</h2>
+        <p>Una página bien hecha también la puede usar una persona con discapacidad visual o motriz. Las pautas de accesibilidad del W3C piden, entre otras cosas, texto alternativo en las imágenes, buen contraste, que todo funcione con el teclado y subtítulos en los videos. Por eso cada imagen de este sitio tiene su atributo <code>alt</code>.</p>
+        <figure>
+          <img src="../img/accesibilidad.svg" alt="Cuatro buenas prácticas de accesibilidad: texto alternativo en las imágenes, buen contraste de colores, uso con teclado y subtítulos en los videos." width="600" height="340">
+          <figcaption>Figura 5. Buenas prácticas de accesibilidad web.</figcaption>
+        </figure>
+      </section>
+
+      <section id="riesgos">
+        <h2>Problemas y riesgos</h2>
+        <p>No todo es positivo. Estos son algunos problemas que vienen con la web:</p>
+        <ul>
+          <li><strong>Brecha digital:</strong> quien no tiene buena conexión o un equipo propio se queda fuera de servicios que ya solo funcionan en línea.</li>
+          <li><strong>Datos personales:</strong> cada formulario guarda información de alguien. En Ecuador la <mark>Ley Orgánica de Protección de Datos Personales</mark> de 2021 exige consentimiento y un cuidado especial con los datos de niñas, niños y adolescentes.</li>
+          <li><strong>Desinformación:</strong> publicar es fácil; verificar, no tanto.</li>
+          <li><strong>Dependencia:</strong> si se cae el servicio o la conexión, se detiene la clase, el trámite o la venta.</li>
+        </ul>
+      </section>
+    </main>
+
+    <aside class="lateral">
+      <h2>En esta página</h2>
+      <ul>
+        <li><a href="#cambios">Cuatro cambios</a></li>
+        <li><a href="#tabla">Antes y después</a></li>
+        <li><a href="#accesibilidad">Una web para todos</a></li>
+        <li><a href="#riesgos">Lo que preocupa</a></li>
+      </ul>
+      <h2>Para pensar</h2>
+      <p>¿Cuántos trámites, pagos o clases resolviste este mes sin salir de casa? Probablemente más de los que hacías hace diez años.</p>
+    </aside>
+  </div>
+
+  <!-- Pie de página (se repite en todas las páginas) -->
+  <footer class="pie">
+    <p>Boris Daniel Lazo Tapia – Tecnologías Web – UTPL – 2026</p>
+  </footer>
+</body>
+</html>

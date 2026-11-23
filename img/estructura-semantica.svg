@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 430" width="600" height="430" font-family="Consolas, Courier New, monospace">
+  <rect width="600" height="430" fill="#f5f8fb"/>
+  <rect x="20" y="20" width="560" height="52" rx="8" fill="#0b2545"/>
+  <text x="300" y="53" text-anchor="middle" font-size="20" font-weight="700" fill="#ffffff">&lt;header&gt;</text>
+  <rect x="20" y="80" width="560" height="36" rx="8" fill="#13315c"/>
+  <text x="300" y="104" text-anchor="middle" font-size="18" font-weight="700" fill="#ffffff">&lt;nav&gt;</text>
+  <rect x="20" y="126" width="390" height="236" rx="8" fill="#ffffff" stroke="#13315c" stroke-width="3"/>
+  <text x="40" y="152" font-size="18" font-weight="700" fill="#13315c">&lt;main&gt;</text>
+  <rect x="38" y="164" width="354" height="78" rx="8" fill="#d6f1ee" stroke="#1b998b" stroke-width="2"/>
+  <text x="215" y="208" text-anchor="middle" font-size="18" font-weight="700" fill="#0b2545">&lt;section&gt;</text>
+  <rect x="38" y="252" width="354" height="94" rx="8" fill="#fff1e2" stroke="#f4a259" stroke-width="2"/>
+  <text x="215" y="292" text-anchor="middle" font-size="18" font-weight="700" fill="#0b2545">&lt;article&gt;</text>
+  <text x="215" y="318" text-anchor="middle" font-size="14" fill="#4a5a6a">&lt;figure&gt; + &lt;figcaption&gt;</text>
+  <rect x="420" y="126" width="160" height="236" rx="8" fill="#ffffff" stroke="#1b998b" stroke-width="3" stroke-dasharray="8 5"/>
+  <text x="500" y="250" text-anchor="middle" font-size="18" font-weight="700" fill="#1b998b">&lt;aside&gt;</text>
+  <rect x="20" y="372" width="560" height="44" rx="8" fill="#0b2545"/>
+  <text x="300" y="400" text-anchor="middle" font-size="18" font-weight="700" fill="#ffffff">&lt;footer&gt;</text>
+</svg>

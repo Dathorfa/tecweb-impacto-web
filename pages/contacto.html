@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Formulario de contacto del sitio académico La web que nos cambió.">
+  <meta name="author" content="Boris Daniel Lazo Tapia">
+  <title>Contacto | La web que nos cambió</title>
+  <link rel="icon" href="../img/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+  <!-- Encabezado del sitio: nombre y menú (se repite en todas las páginas) -->
+  <header class="cabecera">
+    <div class="cabecera__marca">
+      <a class="marca" href="../index.html">
+        <span>La web que nos cambió</span>
+      </a>
+      <p class="lema">Impacto de las tecnologías web en la sociedad y los negocios</p>
+    </div>
+    <nav class="menu" aria-label="Menú principal">
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="sociedad.html">Sociedad</a></li>
+        <li><a href="negocios.html">Negocios</a></li>
+        <li><a href="caso-practico.html">Caso práctico</a></li>
+        <li><a href="contacto.html" aria-current="page">Contacto</a></li>
+        <li><a href="referencias.html">Referencias</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="contenedor">
+    <main id="contenido">
+      <h1>Contacto</h1>
+      <p class="intro">¿Tienes un comentario sobre el sitio o un ejemplo de cómo la web cambió tu trabajo? Escríbelo aquí. Los campos marcados con * son obligatorios.</p>
+
+      <section id="formulario">
+        <h2>Formulario de contacto</h2>
+        <p>Según López et al. (2016), un formulario es «un área especial de interactividad, dentro de la cual es posible insertar un conjunto de elementos que permiten recibir la respuesta a una o varias preguntas formuladas al usuario» (p. 63, como se citó en Torres Guarnizo, 2026).</p>
+
+        <!-- Formulario: el navegador valida los campos con atributos de HTML5 (required, type="email", minlength, maxlength).
+             Como el sitio es estático, se envía con GET a una página de confirmación. -->
+        <form class="formulario" action="gracias.html" method="get">
+          <fieldset>
+            <legend>Tus datos</legend>
+            <div class="campo">
+              <label for="nombre">Nombre completo *</label>
+              <input type="text" id="nombre" name="nombre" required minlength="3" maxlength="60" autocomplete="name" placeholder="Ej.: Ana Pérez">
+            </div>
+            <div class="campo">
+              <label for="correo">Correo electrónico *</label>
+              <input type="email" id="correo" name="correo" required maxlength="80" autocomplete="email" placeholder="nombre@ejemplo.com" aria-describedby="ayuda-correo">
+              <span class="ayuda" id="ayuda-correo">Solo se usa para responderte.</span>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Tu mensaje</legend>
+            <div class="campo">
+              <label for="asunto">Asunto *</label>
+              <input type="text" id="asunto" name="asunto" required minlength="4" maxlength="80">
+            </div>
+            <div class="campo">
+              <label for="tema">Tema</label>
+              <select id="tema" name="tema">
+                <option value="comentario">Comentario sobre el sitio</option>
+                <option value="sociedad">Impacto en la sociedad</option>
+                <option value="negocios">Impacto en los negocios</option>
+                <option value="otro">Otro</option>
+              </select>
+            </div>
+            <div class="campo">
+              <label for="mensaje">Mensaje *</label>
+              <textarea id="mensaje" name="mensaje" rows="6" required minlength="10" maxlength="600" aria-describedby="ayuda-mensaje"></textarea>
+              <span class="ayuda" id="ayuda-mensaje">Entre 10 y 600 caracteres.</span>
+            </div>
+            <div class="casilla">
+              <input type="checkbox" id="acepto" name="acepto" value="si" required>
+              <label for="acepto">Acepto que mis datos se usen solo para responder este mensaje, de acuerdo con la Ley Orgánica de Protección de Datos Personales. *</label>
+            </div>
+          </fieldset>
+
+          <div class="botones">
+            <button type="submit" class="boton">Enviar mensaje</button>
+            <button type="reset" class="boton boton--secundario">Borrar</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <aside class="lateral">
+      <h2>Antes de enviar</h2>
+      <ul>
+        <li>El navegador revisa que el correo tenga un formato válido.</li>
+        <li>Si falta un campo obligatorio, el formulario no se envía y te indica cuál es.</li>
+        <li>Es un sitio académico: el mensaje no llega a ningún servidor, solo abre una página de confirmación.</li>
+      </ul>
+      <h2>Sobre el proyecto</h2>
+      <address>
+        Boris Daniel Lazo Tapia<br>
+        Tecnologías de la Información, modalidad a distancia<br>
+        Universidad Técnica Particular de Loja
+      </address>
+    </aside>
+  </div>
+
+  <!-- Pie de página (se repite en todas las páginas) -->
+  <footer class="pie">
+    <p>Boris Daniel Lazo Tapia – Tecnologías Web – UTPL – 2026</p>
+  </footer>
+</body>
+</html>

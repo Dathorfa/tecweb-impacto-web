@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 380" width="960" height="380" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <marker id="punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#13315c"/>
+    </marker>
+    <marker id="punta2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#1b998b"/>
+    </marker>
+  </defs>
+  <rect width="960" height="380" fill="#f5f8fb"/>
+  <!-- Cliente: computadora portátil con navegador -->
+  <rect x="70" y="80" width="210" height="140" rx="10" fill="#ffffff" stroke="#13315c" stroke-width="4"/>
+  <rect x="82" y="92" width="186" height="20" rx="4" fill="#d6f1ee"/>
+  <circle cx="94" cy="102" r="4" fill="#f4a259"/>
+  <circle cx="106" cy="102" r="4" fill="#1b998b"/>
+  <rect x="120" y="96" width="136" height="12" rx="6" fill="#ffffff"/>
+  <path d="M92 130 H250 M92 148 H230 M92 166 H244 M92 184 H200" stroke="#9fb1c4" stroke-width="6" stroke-linecap="round"/>
+  <path d="M50 232 H300 L282 220 H68 Z" fill="#13315c"/>
+  <text x="175" y="272" text-anchor="middle" font-size="22" font-weight="700" fill="#0b2545">Cliente</text>
+  <text x="175" y="298" text-anchor="middle" font-size="17" fill="#4a5a6a">(navegador web)</text>
+  <!-- Servidor -->
+  <rect x="700" y="70" width="190" height="48" rx="8" fill="#13315c"/>
+  <rect x="700" y="126" width="190" height="48" rx="8" fill="#13315c"/>
+  <rect x="700" y="182" width="190" height="48" rx="8" fill="#13315c"/>
+  <circle cx="724" cy="94" r="6" fill="#1b998b"/>
+  <circle cx="724" cy="150" r="6" fill="#1b998b"/>
+  <circle cx="724" cy="206" r="6" fill="#f4a259"/>
+  <path d="M760 94 H866 M760 150 H866 M760 206 H866" stroke="#4f6d92" stroke-width="6" stroke-linecap="round"/>
+  <text x="795" y="272" text-anchor="middle" font-size="22" font-weight="700" fill="#0b2545">Servidor web</text>
+  <text x="795" y="298" text-anchor="middle" font-size="17" fill="#4a5a6a">(por ejemplo, Apache)</text>
+  <!-- Flechas de petición y respuesta -->
+  <line x1="310" y1="130" x2="676" y2="130" stroke="#13315c" stroke-width="5" marker-end="url(#punta)"/>
+  <text x="495" y="112" text-anchor="middle" font-size="18" font-weight="600" fill="#13315c">1. Petición HTTP: GET /index.html</text>
+  <line x1="684" y1="180" x2="318" y2="180" stroke="#1b998b" stroke-width="5" marker-end="url(#punta2)"/>
+  <text x="495" y="214" text-anchor="middle" font-size="18" font-weight="600" fill="#1b998b">2. Respuesta: 200 OK + HTML, CSS e imágenes</text>
+  <text x="480" y="350" text-anchor="middle" font-size="18" fill="#0b2545">3. El navegador interpreta el HTML y dibuja la página en pantalla</text>
+</svg>

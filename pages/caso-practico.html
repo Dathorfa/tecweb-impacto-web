@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Caso práctico: cómo usa las tecnologías web un centro de entretenimiento con sedes en Cuenca, Guayaquil y Quito.">
+  <meta name="author" content="Boris Daniel Lazo Tapia">
+  <title>Caso práctico | La web que nos cambió</title>
+  <link rel="icon" href="../img/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+  <!-- Encabezado del sitio: nombre y menú (se repite en todas las páginas) -->
+  <header class="cabecera">
+    <div class="cabecera__marca">
+      <a class="marca" href="../index.html">
+        <span>La web que nos cambió</span>
+      </a>
+      <p class="lema">Impacto de las tecnologías web en la sociedad y los negocios</p>
+    </div>
+    <nav class="menu" aria-label="Menú principal">
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="sociedad.html">Sociedad</a></li>
+        <li><a href="negocios.html">Negocios</a></li>
+        <li><a href="caso-practico.html" aria-current="page">Caso práctico</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="referencias.html">Referencias</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="contenedor">
+    <main id="contenido">
+      <h1>Caso práctico: la web en un centro de entretenimiento</h1>
+      <p class="nota"><strong>Nota de confidencialidad:</strong> este caso describe de forma general cómo una empresa usa las tecnologías web. No incluye datos internos, cifras de ventas ni información de clientes, y se publica solo con fines académicos.</p>
+
+      <!-- El caso es un contenido independiente, por eso va en un article -->
+      <article class="caso">
+        <header>
+          <h2>Iceberg Ecuador: juegos interactivos en Cuenca, Guayaquil y Quito</h2>
+          <p>Caso elaborado desde la experiencia del autor en Iceberg Labs, el área de tecnología de la empresa.</p>
+        </header>
+        <p>Iceberg Ecuador es una empresa ecuatoriana de entretenimiento con salas de juegos interactivos en tres ciudades. En mi trabajo he visto que, para un negocio así, la web no es un extra: es por donde llega buena parte de la gente y por donde el personal revisa lo que pasa en cada sede.</p>
+
+        <section>
+          <h3>La página web</h3>
+          <p>El sitio público de la empresa muestra las sedes, los juegos y la información para visitarlas. Está construido con un framework moderno, pero lo que al final llega al navegador sigue siendo HTML, CSS y JavaScript, o sea, lo mismo que se estudia en esta unidad.</p>
+        </section>
+
+        <section>
+          <h3>Registro de jugadores</h3>
+          <p>Cada enlace que se comparte lleva un parámetro <code>src</code> en la dirección. El código QR que está en la sede de Cuenca, por ejemplo, abre la página con <code>?src=qr-cuenca</code>, y el enlace que se envía por WhatsApp lleva <code>?src=wa-ventas</code>. La página guarda ese origen y lo adjunta al registro del jugador.</p>
+          <figure>
+            <img src="../img/caso-registro.png" alt="Flujo del registro: un QR en la sede, un mensaje de WhatsApp o una publicación en redes llevan a la página web con el parámetro src; la página guarda el origen, la persona se registra, los datos llegan al servidor y un panel web muestra los registros por origen." width="960" height="400">
+            <figcaption>Figura 7. Registro de jugadores con enlaces que identifican el origen.</figcaption>
+          </figure>
+          <p>Es lo mismo que explica la guía sobre el método GET: las variables viajan en la dirección de la página (Torres Guarnizo, 2026). La diferencia es que aquí no viaja ningún dato personal, solo una etiqueta que identifica el canal.</p>
+        </section>
+
+        <section>
+          <h3>Paneles web para el personal</h3>
+          <p>Para revisar reportes, el personal no instala programas: entra desde el navegador a paneles web internos con su usuario y contraseña. Así se puede revisar la información de las tres ciudades desde cualquier computadora o tablet autorizada.</p>
+        </section>
+
+        <section>
+          <h3>Datos personales y menores de edad</h3>
+          <p>A las salas asisten niños, adolescentes y adultos. Por eso el registro pide solo los datos necesarios, y la Ley Orgánica de Protección de Datos Personales de 2021 obliga a tener un cuidado especial con la información de niñas, niños y adolescentes.</p>
+        </section>
+
+        <footer>
+          <p>Caso redactado en <time datetime="2026-11">noviembre de 2026</time>.</p>
+        </footer>
+      </article>
+
+      <section id="aprendizajes">
+        <h2>Conclusiones del caso</h2>
+        <ul>
+          <li>Un parámetro en el enlace basta para medir qué canal funciona.</li>
+          <li>Una página bien estructurada sirve igual para las personas y para los buscadores.</li>
+          <li>Los paneles web ahorran instalar y mantener programas en cada computadora.</li>
+          <li>Los datos personales se cuidan desde el diseño del formulario, no al final.</li>
+        </ul>
+      </section>
+    </main>
+
+    <aside class="lateral">
+      <h2>Ficha del caso</h2>
+      <dl>
+        <dt>Empresa</dt>
+        <dd>Iceberg Ecuador</dd>
+        <dt>Rubro</dt>
+        <dd>Entretenimiento con juegos interactivos</dd>
+        <dt>Sedes</dt>
+        <dd>Cuenca, Guayaquil y Quito</dd>
+        <dt>Área de tecnología</dt>
+        <dd>Iceberg Labs</dd>
+        <dt>Tecnologías web del caso</dt>
+        <dd>HTML5, CSS, JavaScript, HTTP/HTTPS y códigos QR</dd>
+      </dl>
+    </aside>
+  </div>
+
+  <!-- Pie de página (se repite en todas las páginas) -->
+  <footer class="pie">
+    <p>Boris Daniel Lazo Tapia – Tecnologías Web – UTPL – 2026</p>
+  </footer>
+</body>
+</html>

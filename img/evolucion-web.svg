@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 380" width="960" height="380" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="960" height="380" fill="#f5f8fb"/>
+  <line x1="70" y1="190" x2="890" y2="190" stroke="#13315c" stroke-width="6" stroke-linecap="round"/>
+  <polygon points="890,178 914,190 890,202" fill="#13315c"/>
+  <!-- Estación 1: Web 1.0 -->
+  <rect x="88" y="62" width="64" height="80" rx="6" fill="#ffffff" stroke="#13315c" stroke-width="3"/>
+  <path d="M100 82 H140 M100 96 H140 M100 110 H132 M100 124 H138" stroke="#13315c" stroke-width="3"/>
+  <circle cx="120" cy="190" r="16" fill="#1b998b" stroke="#ffffff" stroke-width="4"/>
+  <text x="120" y="240" text-anchor="middle" font-size="24" font-weight="700" fill="#0b2545">1991</text>
+  <text x="120" y="268" text-anchor="middle" font-size="19" font-weight="600" fill="#1b998b">Web 1.0</text>
+  <text x="120" y="294" text-anchor="middle" font-size="16" fill="#4a5a6a">Páginas para leer</text>
+  <!-- Estación 2: Web 2.0 -->
+  <rect x="318" y="66" width="70" height="46" rx="12" fill="#ffffff" stroke="#13315c" stroke-width="3"/>
+  <path d="M334 112 l-6 16 l18 -16" fill="#ffffff" stroke="#13315c" stroke-width="3" stroke-linejoin="round"/>
+  <rect x="350" y="98" width="62" height="40" rx="12" fill="#d6f1ee" stroke="#1b998b" stroke-width="3"/>
+  <circle cx="368" cy="118" r="3.5" fill="#1b998b"/>
+  <circle cx="381" cy="118" r="3.5" fill="#1b998b"/>
+  <circle cx="394" cy="118" r="3.5" fill="#1b998b"/>
+  <circle cx="360" cy="190" r="16" fill="#1b998b" stroke="#ffffff" stroke-width="4"/>
+  <text x="360" y="240" text-anchor="middle" font-size="24" font-weight="700" fill="#0b2545">Años 2000</text>
+  <text x="360" y="268" text-anchor="middle" font-size="19" font-weight="600" fill="#1b998b">Web 2.0</text>
+  <text x="360" y="294" text-anchor="middle" font-size="16" fill="#4a5a6a">Redes y contenido</text>
+  <text x="360" y="314" text-anchor="middle" font-size="16" fill="#4a5a6a">hecho por los usuarios</text>
+  <!-- Estación 3: web móvil -->
+  <rect x="576" y="54" width="48" height="90" rx="9" fill="#ffffff" stroke="#13315c" stroke-width="3"/>
+  <rect x="583" y="66" width="34" height="58" rx="3" fill="#d6f1ee"/>
+  <circle cx="600" cy="134" r="4" fill="#13315c"/>
+  <circle cx="600" cy="190" r="16" fill="#1b998b" stroke="#ffffff" stroke-width="4"/>
+  <text x="600" y="240" text-anchor="middle" font-size="24" font-weight="700" fill="#0b2545">Años 2010</text>
+  <text x="600" y="268" text-anchor="middle" font-size="19" font-weight="600" fill="#1b998b">Web móvil</text>
+  <text x="600" y="294" text-anchor="middle" font-size="16" fill="#4a5a6a">La web en el bolsillo</text>
+  <!-- Estación 4: web de servicios -->
+  <path d="M806 128 a22 22 0 0 1 4 -43 a30 30 0 0 1 56 -6 a20 20 0 0 1 12 49 z" fill="#ffffff" stroke="#13315c" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M826 108 l10 10 l18 -20" fill="none" stroke="#1b998b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="840" cy="190" r="16" fill="#f4a259" stroke="#ffffff" stroke-width="4"/>
+  <text x="840" y="240" text-anchor="middle" font-size="24" font-weight="700" fill="#0b2545">Hoy</text>
+  <text x="840" y="268" text-anchor="middle" font-size="19" font-weight="600" fill="#1b998b">Web de servicios</text>
+  <text x="840" y="294" text-anchor="middle" font-size="16" fill="#4a5a6a">Aulas, trámites y</text>
+  <text x="840" y="314" text-anchor="middle" font-size="16" fill="#4a5a6a">compras en línea</text>
+</svg>

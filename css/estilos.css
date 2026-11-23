@@ -1,0 +1,147 @@
+/* Hoja de estilos del sitio "La web que nos cambió"
+   Tecnologías Web - ACDB1
+   Autor: Boris Daniel Lazo Tapia */
+
+body {
+  margin: 0;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #000;
+  background-color: #fff;
+}
+
+/* ---------- Encabezado ---------- */
+.cabecera {
+  background-color: #1a73e8;
+  color: #fff;
+  padding: 12px 20px 0 20px;
+}
+.marca {
+  color: #fff;
+  text-decoration: none;
+  font-family: Tahoma, Verdana, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+}
+.marca img { vertical-align: middle; margin-right: 8px; }
+.lema {
+  margin: 4px 0 10px 0;
+  font-size: 14px;
+  color: #fff;
+}
+
+/* ---------- Menú ---------- */
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 8px 0;
+  border-top: 1px solid #fff;
+}
+.menu li { display: inline; margin-right: 18px; }
+.menu a { color: #fff; }
+.menu a[aria-current="page"] { font-weight: bold; }
+
+/* ---------- Contenido y barra lateral ---------- */
+.contenedor {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 0 10px;
+  overflow: auto;
+}
+main {
+  float: left;
+  width: 68%;
+}
+.lateral {
+  float: right;
+  width: 26%;
+  background: #f0f4ff;
+  border-left: 4px solid #1a73e8;
+  padding: 10px 12px;
+}
+.lateral h2 { font-size: 18px; }
+
+h1, h2, h3, h4, h5, h6 { font-family: Tahoma, Verdana, sans-serif; font-weight: bold; }
+h1 { color: #1a4fa0; font-size: 26px; }
+h2 { color: #1a4fa0; font-size: 21px; margin-top: 26px; }
+h3 { font-size: 17px; }
+h4, h5, h6 { font-size: 15px; }
+
+dt { font-weight: bold; }
+dd { margin: 0 0 8px 15px; }
+code { font-family: "Courier New", monospace; }
+
+/* ---------- Figuras ---------- */
+figure { margin: 15px 0; }
+figure img, figure video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+figcaption {
+  font-style: italic;
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+/* ---------- Tablas ---------- */
+.tabla-scroll { overflow-x: auto; }
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 15px 0;
+}
+caption {
+  font-weight: bold;
+  text-align: left;
+  padding-bottom: 5px;
+}
+th, td {
+  border: 1px solid #666;
+  padding: 5px;
+  text-align: left;
+  vertical-align: top;
+}
+th { background-color: #e6e6e6; }
+tfoot td { font-size: 13px; }
+
+/* artículos de la página de sociedad */
+.tarjeta { border-bottom: 1px solid #ccc; padding-bottom: 6px; }
+.nota {
+  background: #f0f4ff;
+  border-left: 4px solid #1a73e8;
+  padding: 8px;
+}
+
+/* ---------- Formulario ---------- */
+fieldset { border: 1px solid #666; margin-bottom: 15px; }
+.campo { margin-bottom: 10px; }
+.campo label { display: block; font-weight: bold; }
+input[type="text"], input[type="email"], select, textarea {
+  width: 95%;
+  padding: 3px;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 14px;
+}
+.ayuda { font-size: 13px; }
+input:invalid:focus, textarea:invalid:focus { border: 2px solid #c00; }
+.boton { padding: 4px 12px; font-size: 14px; }
+
+/* ---------- Pie de página ---------- */
+.pie {
+  clear: both;
+  background-color: #ddd;
+  color: #000;
+  font-size: 13px;
+  text-align: center;
+  padding: 8px;
+}
+.pie p { margin: 0; }
+
+/* celulares: se quita el float */
+@media (max-width: 700px) {
+  main, .lateral { float: none; width: auto; }
+  .lateral { margin-top: 15px; }
+  .menu li { display: block; margin: 4px 0; }
+}

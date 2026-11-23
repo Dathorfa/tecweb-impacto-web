@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sitio académico sobre el impacto de las tecnologías web en la sociedad y los negocios.">
+  <meta name="author" content="Boris Daniel Lazo Tapia">
+  <title>Inicio | La web que nos cambió</title>
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <!-- Encabezado del sitio: nombre y menú (se repite en todas las páginas) -->
+  <header class="cabecera">
+    <div class="cabecera__marca">
+      <a class="marca" href="index.html">
+        <span>La web que nos cambió</span>
+      </a>
+      <p class="lema">Impacto de las tecnologías web en la sociedad y los negocios</p>
+    </div>
+    <nav class="menu" aria-label="Menú principal">
+      <ul>
+        <li><a href="index.html" aria-current="page">Inicio</a></li>
+        <li><a href="pages/sociedad.html">Sociedad</a></li>
+        <li><a href="pages/negocios.html">Negocios</a></li>
+        <li><a href="pages/caso-practico.html">Caso práctico</a></li>
+        <li><a href="pages/contacto.html">Contacto</a></li>
+        <li><a href="pages/referencias.html">Referencias</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="contenedor">
+    <!-- Contenido principal de la página -->
+    <main id="contenido">
+      <h1>Impacto de las tecnologías web en la sociedad y los negocios</h1>
+      <p class="intro">Hace poco más de treinta años la web era un puñado de documentos enlazados entre sí. Hoy por ella pasan las clases, los trámites, las compras y buena parte del trabajo. Para este trabajo escogí ver ese cambio desde dos lados, la sociedad y los negocios, y al final cuento un caso real de un centro de entretenimiento ecuatoriano.</p>
+
+      <section id="origen">
+        <h2>Historia de la web</h2>
+        <p>La web nació en el CERN. En 1989 Tim Berners-Lee propuso un sistema de hipertexto para compartir información entre investigadores y poco después se publicó el primer sitio web. La idea de fondo sigue intacta: documentos escritos en HTML que se enlazan entre sí y que cualquier navegador puede mostrar (Torres Guarnizo, 2026).</p>
+        <figure>
+          <img src="img/evolucion-web.svg" alt="Línea de tiempo: en 1991 la Web 1.0 con páginas para leer; en los años 2000 la Web 2.0 con redes y contenido de los usuarios; en los años 2010 la web móvil; hoy, la web de servicios con aulas, trámites y compras en línea." width="960" height="380">
+          <figcaption>Figura 1. Etapas de la evolución de la web. Elaboración propia.</figcaption>
+        </figure>
+        <h3>Algunos hitos</h3>
+        <ol>
+          <li><time datetime="1989">1989</time>: Tim Berners-Lee presenta en el CERN la propuesta de un sistema de hipertexto global.</li>
+          <li><time datetime="1991">1991</time>: se publica el primer sitio web, que todavía se puede visitar.</li>
+          <li><time datetime="2014-10-28">2014</time>: HTML5 se convierte en recomendación oficial del W3C.</li>
+          <li>Hoy: HTML se mantiene como un estándar vivo que se actualiza de forma continua.</li>
+        </ol>
+      </section>
+
+      <section id="funcionamiento">
+        <h2>Cómo funciona una página</h2>
+        <p>Detrás de cada clic hay una conversación entre dos programas. El navegador (el cliente) envía una petición HTTP al servidor web y el servidor responde con el documento HTML y los archivos que lo acompañan: hojas de estilo, imágenes o videos. El navegador interpreta todo eso y dibuja la página.</p>
+        <figure>
+          <img src="img/cliente-servidor.svg" alt="Diagrama: el cliente envía la petición HTTP GET /index.html al servidor web; el servidor responde 200 OK con HTML, CSS e imágenes; el navegador interpreta el HTML y muestra la página." width="960" height="380">
+          <figcaption>Figura 2. Petición y respuesta HTTP entre el cliente y el servidor.</figcaption>
+        </figure>
+        <p>Todas las páginas de este sitio usan la misma estructura: header, nav, main, aside y footer.</p>
+        <figure>
+          <img src="img/estructura-semantica.svg" alt="Esquema de una página: header arriba, nav debajo, main a la izquierda con una section y un article, aside a la derecha y footer al final." width="600" height="430">
+          <figcaption>Figura 3. Estructura de las páginas del sitio.</figcaption>
+        </figure>
+      </section>
+
+      <section id="video">
+        <h2>Video</h2>
+        <figure>
+          <video controls muted preload="metadata" poster="img/video-portada.jpg" width="960" height="540">
+            <source src="video/la-web-en-un-minuto.mp4" type="video/mp4">
+            <p>Tu navegador no puede reproducir el video. Puedes <a href="video/la-web-en-un-minuto.mp4">descargarlo aquí</a>.</p>
+          </video>
+          <figcaption>Video 1. Recorrido por el sitio (33 s, sin audio).</figcaption>
+        </figure>
+      </section>
+
+      <p>En las demás páginas hablo de la sociedad, los negocios, un caso práctico y hay un formulario de contacto.</p>
+    </main>
+
+    <!-- Información complementaria -->
+    <aside class="lateral">
+      <h2>Glosario rápido</h2>
+      <dl>
+        <dt><abbr title="HyperText Markup Language">HTML</abbr></dt>
+        <dd>Lenguaje de marcado que describe la estructura de una página web.</dd>
+        <dt><abbr title="HyperText Transfer Protocol">HTTP</abbr></dt>
+        <dd>Protocolo con el que el navegador y el servidor se piden y entregan recursos.</dd>
+        <dt>Navegador</dt>
+        <dd>Programa cliente que interpreta HTML y CSS y muestra la página.</dd>
+        <dt>Servidor web</dt>
+        <dd>Programa que recibe peticiones y devuelve archivos o datos.</dd>
+        <dt>Etiqueta semántica</dt>
+        <dd>Etiqueta que indica qué papel cumple su contenido, como <code>&lt;nav&gt;</code> o <code>&lt;article&gt;</code>.</dd>
+      </dl>
+      <h2>Dato curioso</h2>
+      <p>El primer sitio web de la historia sigue en línea: <a href="https://info.cern.ch/" target="_blank" rel="noopener">info.cern.ch</a> (se abre en otra pestaña).</p>
+    </aside>
+  </div>
+
+  <!-- Pie de página (se repite en todas las páginas) -->
+  <footer class="pie">
+    <p>Boris Daniel Lazo Tapia – Tecnologías Web – UTPL – 2026</p>
+  </footer>
+</body>
+</html>

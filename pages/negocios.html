@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Cómo las tecnologías web cambiaron la forma de vender, atender y medir en las empresas.">
+  <meta name="author" content="Boris Daniel Lazo Tapia">
+  <title>Impacto en los negocios | La web que nos cambió</title>
+  <link rel="icon" href="../img/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+  <!-- Encabezado del sitio: nombre y menú (se repite en todas las páginas) -->
+  <header class="cabecera">
+    <div class="cabecera__marca">
+      <a class="marca" href="../index.html">
+        <span>La web que nos cambió</span>
+      </a>
+      <p class="lema">Impacto de las tecnologías web en la sociedad y los negocios</p>
+    </div>
+    <nav class="menu" aria-label="Menú principal">
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="sociedad.html">Sociedad</a></li>
+        <li><a href="negocios.html" aria-current="page">Negocios</a></li>
+        <li><a href="caso-practico.html">Caso práctico</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="referencias.html">Referencias</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="contenedor">
+    <main id="contenido">
+      <h1>Impacto en los negocios</h1>
+      <p class="intro">Para una empresa, la web dejó de ser solo una vitrina. Hoy es un canal de venta, de atención al cliente y de medición, y permite que hasta un negocio pequeño venda fuera de su ciudad.</p>
+
+      <section id="comercio">
+        <h2>Comercio electrónico</h2>
+        <p>Una tienda en línea junta en una sola página lo que antes pasaba en el mostrador: mostrar los productos, tomar el pedido, cobrar y coordinar la entrega.</p>
+        <figure>
+          <img src="../img/negocios-tienda.png" alt="Flujo de una compra en línea en cinco pasos: catálogo, carrito, pago seguro por HTTPS, confirmación por correo y entrega a domicilio o retiro." width="960" height="300">
+          <figcaption>Figura 6. Pasos de una compra en una tienda en línea.</figcaption>
+        </figure>
+
+        <!-- Artículo con la jerarquía completa de encabezados (h3 a h6) -->
+        <article>
+          <h3>Pasos de una compra en línea</h3>
+          <ol>
+            <li>El cliente busca en el catálogo y elige un producto.</li>
+            <li>Lo agrega al carrito y revisa el total.</li>
+            <li>Llena el formulario de pago en una conexión segura (HTTPS).</li>
+            <li>Recibe la confirmación por correo electrónico.</li>
+            <li>Recibe el pedido en su casa o lo retira en el local.</li>
+          </ol>
+          <h4>Lo que hace el navegador</h4>
+          <p>Muestra el catálogo con HTML y CSS, revisa los campos del formulario antes de enviarlos y mantiene el carrito mientras el cliente navega por la tienda.</p>
+          <h5>El formulario de pago</h5>
+          <p>Es la parte más delicada. Usa el elemento <code>&lt;form&gt;</code> con el método POST, para que los datos no viajen en la dirección de la página, y campos con validación como <code>type="email"</code> o <code>required</code>.</p>
+          <h6>Nota de seguridad</h6>
+          <p>Un formulario que pide datos de pago solo debe enviarse por HTTPS. Si el navegador no muestra la conexión como segura, mejor no comprar.</p>
+        </article>
+      </section>
+
+      <section id="generos">
+        <h2>Tipos de sitios web</h2>
+        <p>No todos los sitios cumplen el mismo propósito. La guía de la asignatura los clasifica por género: comercio electrónico, autoservicio, servicio gubernamental, educativo, entre otros (Torres Guarnizo, 2026).</p>
+        <div class="tabla-scroll">
+          <table>
+            <caption>Tabla 2. Géneros de sitios web y su aporte a las empresas</caption>
+            <thead>
+              <tr>
+                <th scope="col">Tipo de sitio</th>
+                <th scope="col">Ejemplo</th>
+                <th scope="col">Qué gana el negocio</th>
+                <th scope="col">Tecnologías que lo hacen posible</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Comercio electrónico</td>
+                <td>Tienda en línea de ropa o tecnología</td>
+                <td>Vende las 24 horas y fuera de su ciudad</td>
+                <td>Formularios, pasarela de pago, HTTPS</td>
+              </tr>
+              <tr>
+                <td>Autoservicio</td>
+                <td>Banca web, consulta de saldos</td>
+                <td>Menos filas en agencias y atención a cualquier hora</td>
+                <td>Sesiones de usuario, bases de datos</td>
+              </tr>
+              <tr>
+                <td>Corporativo o informativo</td>
+                <td>Página de una empresa con sus sedes y horarios</td>
+                <td>Presencia, confianza y aparecer en los buscadores</td>
+                <td>HTML semántico, CSS, mapas embebidos</td>
+              </tr>
+              <tr>
+                <td>Educativo</td>
+                <td>Aula virtual de una universidad</td>
+                <td>Cursos a distancia para muchos estudiantes a la vez</td>
+                <td>Video, foros y cuestionarios en línea</td>
+              </tr>
+              <tr>
+                <td>Servicio gubernamental</td>
+                <td>Portal de trámites del Estado</td>
+                <td>Procesos más rápidos y con seguimiento</td>
+                <td>Formularios, firma electrónica, bases de datos</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="4">Fuente: géneros de sitios web de la guía de la asignatura.</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </section>
+
+      <section id="marketing">
+        <h2>Marketing digital</h2>
+        <p>Con la publicidad tradicional era difícil saber qué funcionaba. En la web, cada enlace puede llevar un parámetro que dice de dónde vino la visita, por ejemplo <code>?src=instagram</code>. Así el negocio sabe qué campaña le trae clientes y cuál no. En el <a href="caso-practico.html">caso práctico</a> hay un ejemplo real.</p>
+        <ul>
+          <li>Posicionamiento en buscadores: las etiquetas semánticas ayudan a que los buscadores entiendan qué parte de la página es la más importante.</li>
+          <li>Redes sociales y mensajería con enlaces directos a la página.</li>
+          <li>Atención al cliente por chat y formularios de contacto.</li>
+        </ul>
+      </section>
+
+      <section id="trabajo">
+        <h2>Trabajo remoto y herramientas web</h2>
+        <p>Correo, documentos compartidos, videollamadas y paneles de gestión funcionan dentro del navegador. Un equipo puede trabajar desde distintas ciudades sin instalar casi nada en cada computadora.</p>
+      </section>
+    </main>
+
+    <aside class="lateral">
+      <h2>Ideas clave</h2>
+      <ul>
+        <li>La web abrió mercados que antes eran solo locales.</li>
+        <li>Un enlace con parámetro permite medir qué canal trae clientes.</li>
+        <li>Un formulario confuso o inseguro hace perder ventas.</li>
+      </ul>
+      <h2>Ver también</h2>
+      <p>Cómo aplica todo esto una empresa ecuatoriana: <a href="caso-practico.html">caso práctico</a>.</p>
+    </aside>
+  </div>
+
+  <!-- Pie de página (se repite en todas las páginas) -->
+  <footer class="pie">
+    <p>Boris Daniel Lazo Tapia – Tecnologías Web – UTPL – 2026</p>
+  </footer>
+</body>
+</html>
